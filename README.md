@@ -93,5 +93,5 @@ This project uses Plotly.js, which is subject to the [Plotly license](https://pl
 The Sunburst Chart Card itself and the associated Python script are distributed under the MIT License. While every effort has been made to ensure the safety and security of this code, you use it at your own risk. Configure the script and card securely to avoid exposing sensitive data. Performance may vary depending on the size and structure of your filesystem.
 
 ## License
-This project is licensed under the MIT License. See `LICENSE` for details.
+This project is licensed under the MIT License. See `[LICENSE](LICENSE)` for details.
 
