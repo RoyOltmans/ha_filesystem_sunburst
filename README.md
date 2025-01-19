@@ -88,7 +88,7 @@ The `config.json` file allows you to customize various aspects of the script's b
 - **`max_depth`**: Limits the depth of the folder hierarchy to prevent excessive data generation and improve performance.
 
 ## Disclaimer
-This project uses Plotly.js, which is subject to the [Plotly.js license](https://github.com/plotly/plotly.js/blob/master/LICENSE). You must comply with the terms of this license when using Plotly.js in your projects.
+This project uses Plotly.js, which is subject to the [Plotly license](https://plotly.com/javascript/is-plotly-free/). You must comply with the terms of this license when using Plotly.js in your projects.
 
 The Sunburst Chart Card itself and the associated Python script are distributed under the MIT License. While every effort has been made to ensure the safety and security of this code, you use it at your own risk. Configure the script and card securely to avoid exposing sensitive data. Performance may vary depending on the size and structure of your filesystem.
 
