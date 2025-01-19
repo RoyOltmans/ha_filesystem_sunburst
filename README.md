@@ -14,7 +14,7 @@ This project integrates a Sunburst chart into Home Assistant using Plotly and a 
 ## Installation Guide
 
 ### Prerequisites
-1. Home Assistant installed and running.
+1. Home Assistant installed and running (untested but should be compatible with HA OS,	Core en Supervised, tested with HA Core Container)
 2. Local access to your Home Assistant configuration directory.
 3. Python 3.7+ installed on the host system.
 
