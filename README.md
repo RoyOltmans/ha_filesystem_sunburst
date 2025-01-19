@@ -63,7 +63,7 @@ Add a line to run the script every hour:
 ```bash
 0 * * * * /usr/bin/python3 /opt/scripts/filesystem_scanner.py
 ```
-This ensures the JSON data remains current without manual intervention.
+This ensures the JSON data remains current without manual intervention (this means it runs hourly).
 
 ## Separation of Concerns
 The Sunburst chart card is designed with a clear separation of responsibilities between the frontend and backend to ensure performance and security:
