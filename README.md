@@ -3,6 +3,8 @@
 ## Overview
 This project integrates a Sunburst chart into Home Assistant using Plotly and a custom `sunburst-chart-card.js` file. It visualizes hierarchical filesystem data, fetched as JSON from a Python script, and renders it as an interactive chart in your Home Assistant dashboard.
 
+![preview](/image/filesystem_sunburst.png))
+
 ## Features
 - **Interactive Sunburst Chart**: Dynamically generated with Plotly.
 - **Filesystem Data Visualization**: Hierarchical data displayed in a user-friendly format.
