@@ -80,7 +80,7 @@ The `config.json` file allows you to customize various aspects of the script's b
     "max_depth": 5
 }
 ```
-- **`output_file`**: The location where the JSON output will be saved. Ensure this path is accessible to the Home Assistant frontend.
+- **`output_file`**: The location where the JSON output will be saved. Ensure this path is accessible to the Home Assistant frontend via /local/ refered in the sunburst.
 - **`error_log_file`**: The file where errors and warnings are logged during the scan.
 - **`exclude_dirs`**: A list of directories to exclude from the scan. This helps avoid unnecessary processing of system-critical or irrelevant paths.
 - **`max_depth`**: Limits the depth of the folder hierarchy to prevent excessive data generation and improve performance.
