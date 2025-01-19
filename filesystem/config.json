@@ -1,0 +1,6 @@
+{
+    "output_file": "/config/www/filesystem_data.json",
+    "error_log_file": "/opt/filesystem/error_log.txt",
+    "exclude_dirs": ["/var", "/proc", "/sys", "/dev", "/mnt"],
+    "max_depth": 5
+}
