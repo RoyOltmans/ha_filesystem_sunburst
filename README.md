@@ -61,7 +61,7 @@ crontab -e
 ```
 Add a line to run the script every hour:
 ```bash
-0 * * * * /usr/bin/python3 /opt/scripts/filesystem_scanner.py
+0 * * * * /usr/bin/python3 /opt/scripts/filesystem_sensor.py
 ```
 This ensures the JSON data remains current without manual intervention (this means it runs hourly).
 
