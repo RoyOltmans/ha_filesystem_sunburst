@@ -46,27 +46,38 @@ class SunburstChartCard extends HTMLElement {
     this.shadowRoot.innerHTML = `
       <style>
         .sunburst-container {
-          width: 100%;
-          height: 100%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          overflow: hidden;
-          background-color: transparent;
-          position: relative;
+		  background: var(--ha-card-background, var(--card-background-color, #fff));
+  		  backdrop-filter: none; /* Ensure no transparent blur effect */
+  		  box-shadow: none; /* Remove unwanted glow */
+  		  box-sizing: border-box;
+  		  border-radius: var(--ha-card-border-radius,12px);
+		  border-width: var(--ha-card-border-width,1px);
+		  border: var(--ha-card-border-width, 1px) solid var(--ha-card-border-color, var(--divider-color, #e0e0e0));
+  		  color: var(--primary-text-color);
+  		  display: block;
+  		  transition: all 0.3s ease-out;
+  		  position: relative;
+		  border-style: solid;
         }
         #chart {
-          width: 100%;
-          height: 100%;
+          flex: 1;
+          max-width: 100%;
+          max-height: 100%;
+          margin: 10px;
         }
+
         .version-label {
           position: absolute;
           bottom: 10px;
           right: 10px;
           font-size: 12px;
-          color: gray;
+          color: #888;
           font-family: Arial, sans-serif;
-          pointer-events: none; /* Ensure it doesn't interfere with chart interactions */
+          opacity: 0.8;
+          background: rgba(255, 255, 255, 0.7);
+          padding: 2px 6px;
+          border-radius: 4px;
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         }
       </style>
       <div class="sunburst-container">
@@ -82,8 +93,8 @@ class SunburstChartCard extends HTMLElement {
       const layout = {
         margin: { t: 0, l: 0, r: 0, b: 0 },
         uniformtext: { minsize: 10, mode: "hide" },
-        paper_bgcolor: "rgba(0,0,0,0)", // Transparent background
-        plot_bgcolor: "rgba(0,0,0,0)", // Transparent plot area
+        paper_bgcolor: "rgba(0,0,0,0)",
+        plot_bgcolor: "rgba(0,0,0,0)",
         transition: {
           duration: 200, // Faster animations
           easing: "cubic-in-out",
@@ -118,8 +129,8 @@ class SunburstChartCard extends HTMLElement {
         const layout = {
           margin: { t: 0, l: 0, r: 0, b: 0 },
           uniformtext: { minsize: 10, mode: "hide" },
-          paper_bgcolor: "rgba(0,0,0,0)", // Transparent background
-          plot_bgcolor: "rgba(0,0,0,0)", // Transparent plot area
+          paper_bgcolor: "rgba(0,0,0,0)",
+          plot_bgcolor: "rgba(0,0,0,0)",
           transition: {
             duration: 200,
             easing: "cubic-in-out",
@@ -233,3 +244,4 @@ customElements.define("sunburst-chart-card", SunburstChartCard);
 // Version 0.2.1: Adjusted layout for transparent background and white borders in chart visualization.
 // Version 0.2.2: Added thicker white borders to improve chart visibility.
 // Version 0.2.3: Converted size values to MB for rendering and adjusted hovertemplate for better display.
+// Version 0.2.4: Fixed following HA styling, transparancy, dark and light theme's
