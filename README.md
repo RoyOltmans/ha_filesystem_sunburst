@@ -11,6 +11,9 @@ This project integrates a Sunburst chart into Home Assistant using Plotly and a 
 - **Customizable**: Configuration through Home Assistant YAML and external Python scripts.
 - **Performance and Safety**: Data separation between frontend and backend for enhanced performance and security.
 
+## Update 0.2.4
+- Fixed following HA styling, transparancy, dark and light theme's
+
 ## Installation Guide
 
 ### Prerequisites
